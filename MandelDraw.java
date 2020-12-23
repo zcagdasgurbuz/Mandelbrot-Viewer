@@ -126,6 +126,7 @@ public class MandelDraw extends JPanel {
         g.drawString("Done in " + (end - start) + "ms", 50, 50);
         g.drawString("Mid X  -> " + midReal + "  Mid Y -> " + midImg, 50, 75);
         g.drawString("Zoom ->  " + zoom, 50, 100);
+        g.drawString("Iteration ->  " + maxIterations, 50, 125);
     }
 
     /**
