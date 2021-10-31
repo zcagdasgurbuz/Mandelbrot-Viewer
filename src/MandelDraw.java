@@ -59,7 +59,7 @@ public class MandelDraw extends JPanel {
         //these stuff can be parameterized
         maxIterations = 1024;
         infinity = 2;
-        hueShift = 0.3f;
+        hueShift = 0.8f;
         // these should be hard coded. Still need them here, development continues.
         zoom = 0.0;
         zoomInc = 0.05;
