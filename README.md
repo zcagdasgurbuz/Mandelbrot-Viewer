@@ -1,7 +1,7 @@
 # Mandelbrot Viewer
 
 This is a simple java swing Mandelbrot set viewer that utilizes java concurrency tools - ForkJoinPool
-and RecursiveAction - to faster rendering. Also, it is possible to move around and zoom in /out using mouse controls.
+and RecursiveAction - to faster rendering. Also, it is possible to move around and zoom in /out by using mouse controls.
 
 ![Demo](/img/mandel_demo.gif)
 
