@@ -25,10 +25,9 @@ a pioneer of fractal geometry.
 
 ### How does this viewer render the set?
 
-Basically, in this simple viewer, every pixel is associated with a complex number, as if the window is a complex plane.
-However, what is visible on the viewer screen is the arbitrary color representation of the result of the recursive function
-that is applied to each pixel separately. For example, for a pixel associated with the value 1+1i, the iterative function 
-gets calculated like following;  
+Basically, every pixel is associated with a complex number in this simple viewer, as if the window is a complex plane. 
+However, what is visible on the viewer screen is the arbitrary color representation of the result of the recursive function 
+applied to each pixel separately. For example, for a pixel associated with the value 1+1i, the iterative function is like;  
 1. <img src="https://render.githubusercontent.com/render/math?math=f_{c}(z)=(0 %2B 0i)^{2} %2B (1 %2B 1i) = (1 %2B 1i)" >
 2. <img src="https://render.githubusercontent.com/render/math?math=f_{c}(z)=(1 %2B 1i)^{2} %2B (1 %2B 1i) = (1 %2B 3i)">
 3. <img src="https://render.githubusercontent.com/render/math?math=f_{c}(z)=(1 %2B 3i)^{2} %2B (1 %2B 1i) = (-7 %2B 7i)">
@@ -36,11 +35,11 @@ gets calculated like following;
 5. ...
 6. ...
 
-After each function calculation or each loop, the result is checked if its magnitude -distance from origin of complex plane-  is greater
-than some arbitrary number that represents infinity. If so, the calculation loop stops and the iteration count for that
-pixel defines in which color it is going to be drawn. On the other hand, if the magnitude of the result doesn't reach 
-the arbitrary infinity until the calculation loop stops at some arbitrary iteration limit, that pixel is considered in the 
-Mandelbrot set and drawn in black. 
+After each function calculation or loop, the result is checked if its magnitude -distance from the origin of the complex
+plane- is greater than some arbitrary number that represents infinity. If so, the calculation loop stops, and the iteration 
+count for that pixel defines its color. On the other hand, if the magnitude of the result doesn't reach the arbitrary infinity 
+until the calculation loop stops at some arbitrary iteration limit, that pixel/number is considered in the Mandelbrot set and
+drawn in black.
 
 
 
